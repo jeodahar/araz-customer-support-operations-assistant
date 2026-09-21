@@ -13,7 +13,7 @@ from groq import Groq
 from sentence_transformers import SentenceTransformer
 
 # ---------------------------------------------------------------- config
-INDEX_DIR = Path(__file__).parent / "faiss_index"
+APP_DIR = Path(__file__).parent
 GROQ_MODEL = "openai/gpt-oss-120b"
 DEFAULT_TOP_K = 5
 MIN_SCORE = 0.20  # cosine similarity below this counts as "not found"
@@ -98,16 +98,24 @@ header[data-testid="stHeader"] { background: transparent; }
 
 
 # ---------------------------------------------------------------- loaders
+def find_index_dir():
+    """Folder containing index.faiss, wherever it sits under the app folder."""
+    for f in sorted(APP_DIR.rglob("index.faiss")):
+        if (f.parent / "metadata.json").exists() and (f.parent / "config.json").exists():
+            return f.parent
+    return None
+
+
 @st.cache_resource(show_spinner="Loading knowledge base…")
 def load_kb():
     """Load the prebuilt index, metadata and the query-embedding model."""
-    index_file = INDEX_DIR / "index.faiss"
-    if not index_file.exists():
+    index_dir = find_index_dir()
+    if index_dir is None:
         return None
-    index = faiss.read_index(str(index_file))
-    records = json.loads((INDEX_DIR / "metadata.json").read_text(encoding="utf-8"))
+    index = faiss.read_index(str(index_dir / "index.faiss"))
+    records = json.loads((index_dir / "metadata.json").read_text(encoding="utf-8"))
     meta = {int(r["id"]): r for r in records}
-    cfg = json.loads((INDEX_DIR / "config.json").read_text(encoding="utf-8"))
+    cfg = json.loads((index_dir / "config.json").read_text(encoding="utf-8"))
     model = SentenceTransformer(cfg["model"])  # same model used at ingest
     return index, meta, model
 
@@ -202,9 +210,16 @@ st.markdown(
 kb = load_kb()
 if kb is None:
     st.error(
-        "Knowledge base not found. Put the `faiss_index` folder "
-        "(index.faiss, metadata.json, config.json) next to app.py."
+        "Knowledge base not found. The repo needs a folder containing "
+        "`index.faiss`, `metadata.json` and `config.json` next to app.py."
     )
+    seen = sorted(
+        str(p.relative_to(APP_DIR))
+        for p in APP_DIR.rglob("*")
+        if p.is_file() and ".git" not in p.parts
+    )
+    with st.expander("Files the app can see"):
+        st.code("\n".join(seen[:60]) or "(nothing)")
     st.stop()
 
 client = get_client()
