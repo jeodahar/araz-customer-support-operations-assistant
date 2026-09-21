@@ -1,0 +1,86 @@
+[
+  {
+    "id": 0,
+    "department": "customer_support",
+    "source_file": "customer_support/customer_support_guide.pdf",
+    "page": 1,
+    "text": "Customer Support Guide Support Channels ● In-app live chat, available 24/7 for order-related issues. ● Phone support, available during business hours for urgent issues (payment disputes, undelivered high-value items). ● Email support for non-urgent inquiries, with a response target of 24-48 hours. Complaint Handling Process ● Step 1: Customer raises an issue with the order ID and description. ● Step 2: Support agent reviews order history, delivery status, and any prior communication. ● Step 3: Agent proposes a resolution — replacement, return, refund, or voucher compensation. ● Step 4: If unresolved, the case is escalated to a senior support specialist within 24 hours. Escalation Guidelines ● Cases involving safety issues, fraud, or repeated failed resolutions are escalated immediately to the Trust & Safety team. ● Customers are kept informed of case status at every stage via app notification and email. Service Standards ● First response time target: under 5 minutes for live chat, under 2 hours for phone queue. ● Customer satisfaction is measured after each resolved case via a short feedback survey."
+  },
+  {
+    "id": 1,
+    "department": "delivery",
+    "source_file": "delivery/delivery_guidelines.pdf",
+    "page": 1,
+    "text": "Delivery Guidelines Delivery Process ● Once an order is confirmed, it is packed by the seller or Daraz warehouse and handed to a courier partner. ● Customers receive tracking updates at each stage: Order Confirmed, Packed, Shipped, Out for Delivery, Delivered. ● A delivery attempt includes a call or SMS to the customer; if unreachable, up to 2 more attempts are made before the order is returned to the seller. Delivery Locations ● Standard delivery covers all major cities and most rural areas via courier partners. ● Remote areas may have limited courier coverage, in which case delivery may take longer or require pickup from a designated point. Cash on Delivery (COD) ● COD is available for most products, with a maximum order value limit that may vary by region. ● Customers must have the exact or close amount ready, as couriers may not always carry large amounts of change. Failed Deliveries ● If a package cannot be delivered after 3 attempts, it is returned to the seller and the customer is notified. ● Repeated failed deliveries on a customer's account may result in COD being disabled for future orders."
+  },
+  {
+    "id": 2,
+    "department": "delivery",
+    "source_file": "delivery/delivery_timelines.pdf",
+    "page": 1,
+    "text": "Delivery Timelines Standard Timelines ● Major cities: 2-4 business days from order confirmation. ● Other urban areas: 4-6 business days. ● Remote or rural areas: 6-10 business days, depending on courier network coverage. Express Delivery ● Available for select products and locations, with delivery in 24-48 hours for an additional fee shown at checkout. Factors That May Delay Delivery ● Public holidays, severe weather, high-demand sale events (e.g. 11.11, 12.12), and incomplete or incorrect addresses. ● Customs clearance delays for items shipped from international sellers. Tracking a Delivery ● Customers can track real-time status from 'My Orders' > 'Track Order', which shows the current courier checkpoint. ● If a delivery is delayed beyond the estimated window, customers can contact Customer Support for an update or compensation voucher where applicable."
+  },
+  {
+    "id": 3,
+    "department": "payments",
+    "source_file": "payments/payment_faqs.pdf",
+    "page": 1,
+    "text": "Payment FAQs Common Questions ● Q: My payment was deducted but the order shows as failed. A: This is usually a temporary hold; it is auto-reversed within 5-7 business days if the order did not confirm. ● Q: Can I change my payment method after placing an order? A: No, the payment method cannot be changed once an order is placed; the order must be cancelled and re-placed. ● Q: Is it safe to save my card details? A: Saved cards are stored securely by the payment processor using encryption; Daraz does not store full card numbers. Failed Payment Troubleshooting ● Check that the card has sufficient balance and online transactions are enabled. ● Try an alternate payment method (wallet, COD if available) if the card payment repeatedly fails. ● Contact your bank if the amount was deducted but the order was not confirmed after 7 business days. Promo Codes & Vouchers ● Vouchers are applied at checkout and only valid for the stated date range, category, and minimum order value. ● Only one voucher can typically be applied per order, unless explicitly stated as 'stackable'."
+  },
+  {
+    "id": 4,
+    "department": "payments",
+    "source_file": "payments/payment_methods.pdf",
+    "page": 1,
+    "text": "Accepted Payment Methods Available Payment Options ● Cash on Delivery (COD) — pay in cash when the order arrives, subject to an order value limit. ● Credit and debit cards (Visa, Mastercard) via secure checkout. ● Mobile wallets and bank transfer options, where available in the customer's region. ● Daraz Wallet balance, which can be topped up or accumulated through refunds and cashback. Installment Plans ● Select banks offer 0% installment plans on purchases above a minimum amount; eligibility is shown at checkout if the customer's card qualifies. Payment Security ● All online payments are processed through PCI-DSS compliant payment gateways. ● Customers are advised never to share OTPs (one-time passwords) with anyone, including people claiming to be Daraz support."
+  },
+  {
+    "id": 5,
+    "department": "refunds",
+    "source_file": "refunds/refund_procedures.pdf",
+    "page": 1,
+    "text": "Refund Procedures When a Refund Is Issued ● After a returned item is received and inspected by the seller or warehouse and confirmed to meet return eligibility. ● Immediately for orders that were never dispatched or were cancelled before shipping. ● For failed deliveries where the customer already made an online payment. Refund Methods ● Online payments (card, wallet) are refunded to the original payment method. ● Cash on Delivery (COD) orders are refunded to the customer's Daraz Wallet or via bank transfer, since there is no original payment method to reverse. ● Customers may sometimes be offered a choice between a wallet credit (faster) or original payment method refund (slower). Refund Process Steps ● Step 1: Returned item arrives at the seller/warehouse and is logged. ● Step 2: Quality check confirms the item matches the return reason. ● Step 3: Refund is approved and initiated to the chosen refund method. ● Step 4: Customer receives a confirmation notification with the refund reference number."
+  },
+  {
+    "id": 6,
+    "department": "refunds",
+    "source_file": "refunds/refund_timelines.pdf",
+    "page": 1,
+    "text": "Refund Timelines Processing Time by Method ● Daraz Wallet credit: usually within 24-48 hours after refund approval. ● Credit/debit card refunds: 5-10 business days, depending on the issuing bank. ● Bank transfer refunds: 3-7 business days after approval. What Affects Refund Speed ● How quickly the returned item is received and inspected. ● Bank processing times, which Daraz does not control once the refund is initiated on their end. ● Incomplete customer bank details, which can delay bank transfer refunds until corrected. Checking Refund Status ● Customers can check refund status under 'My Orders' > 'Returns & Refunds', which shows each stage with a timestamp. ● If a refund is not received within the stated window, customers should contact Customer Support with the order ID and refund reference number."
+  },
+  {
+    "id": 7,
+    "department": "returns",
+    "source_file": "returns/return_eligibility.pdf",
+    "page": 1,
+    "text": "Return Eligibility Guidelines Eligibility Checklist ● The return request must be raised within the applicable return window for that product category. ● The item must be in its original condition, with tags, labels, and packaging intact, unless the return reason is 'damaged' or 'wrong item'. ● Proof of purchase (order ID) is required for every return; returns cannot be processed without it. Category-Specific Rules ● Mobile phones and laptops: eligible for return only if the defect is confirmed by a technical inspection within the return window. ● Beauty and personal care: only eligible if the seal is unbroken and the product is unused. ● Furniture and large appliances: return requires the item to be repackaged in original packaging; pickup may take 3-5 extra days due to size. When a Return Is Rejected ● If the item shows signs of use beyond inspection, missing parts, or does not match the reported issue, the return may be rejected and the item shipped back to the customer. ● Customers are notified with a reason whenever a return is rejected, and may appeal through Customer Support."
+  },
+  {
+    "id": 8,
+    "department": "returns",
+    "source_file": "returns/return_policy.pdf",
+    "page": 1,
+    "text": "Return Policy General Return Window ● Most items purchased on Daraz can be returned within 7 days of delivery, unless a different window is stated on the product page. ● Electronics and appliances have a 7-day return window for manufacturing defects only, not change-of-mind returns. ● Fashion and apparel items have a 14-day return window, provided tags are still attached and the item is unworn. What Can Be Returned ● Wrong item delivered (different from what was ordered). ● Damaged or defective item on arrival. ● Item significantly not as described on the product listing. ● Change of mind, only for categories explicitly marked 'Free Returns' on the product page. What Cannot Be Returned ● Perishable goods, personal care items that have been opened or used, and items marked 'Non-Returnable' on the listing. ● Items returned without original packaging, accessories, or free gifts that came with the order. How to Start a Return ● Go to 'My Orders', select the item, and click 'Return / Refund'. ● Choose a reason for the return and upload a photo if the item is damaged or wrong. ● A courier will be scheduled to pick up the item, or you may be asked"
+  },
+  {
+    "id": 9,
+    "department": "returns",
+    "source_file": "returns/return_policy.pdf",
+    "page": 1,
+    "text": "item, and click 'Return / Refund'. ● Choose a reason for the return and upload a photo if the item is damaged or wrong. ● A courier will be scheduled to pick up the item, or you may be asked to drop it at a nearby collection point."
+  },
+  {
+    "id": 10,
+    "department": "sellers",
+    "source_file": "sellers/seller_onboarding.pdf",
+    "page": 1,
+    "text": "Seller Onboarding Guide Registration Requirements ● A valid national ID or business registration document. ● A bank account for receiving payments, registered under the seller's name or business name. ● Basic business information: store name, contact details, and product categories to be sold. Onboarding Steps ● Step 1: Create a Seller Center account and submit required documents. ● Step 2: Documents are verified by the Daraz seller support team, typically within 2-3 business days. ● Step 3: Once approved, the seller completes store setup: store name, logo, and shipping settings. ● Step 4: Seller lists their first products, which go through a basic quality review before going live. Training & Support ● New sellers get access to a Seller University with guides on listing optimization, pricing, and order management. ● A dedicated seller support channel is available for onboarding questions during the first 30 days."
+  },
+  {
+    "id": 11,
+    "department": "sellers",
+    "source_file": "sellers/seller_policies.pdf",
+    "page": 1,
+    "text": "Seller Policies Listing Requirements ● Sellers must provide accurate product titles, descriptions, images, and pricing that match the actual item shipped. ● Counterfeit, prohibited, or restricted items (e.g. weapons, certain medications) may not be listed. Order Fulfillment Obligations ● Sellers must confirm and pack orders within 24 hours of receiving them, and hand over to the courier within the agreed pickup window. ● Repeated late fulfillment or cancellations may result in lower seller ratings or listing visibility. Returns & Refund Obligations for Sellers ● Sellers must accept eligible returns per the platform's return policy and cannot impose stricter rules than Daraz's stated policy. ● Sellers are responsible for return shipping costs when the return reason is their fault (wrong or damaged item). Performance Standards ● Sellers are evaluated on order defect rate, late shipment rate, and cancellation rate; consistently poor performance can lead to account suspension."
+  }
+]
